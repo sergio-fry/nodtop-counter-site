@@ -19,7 +19,8 @@
 
     switch(cnt.type) { 
       case 1:
-        container.innerHTML = container.innerHTML + "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank'><img src='//s3.amazon.com/cnt/banner/"+cnt.id+".gif' /></a>";
+        https://s3.amazonaws.com/nodtop-store/banners/33Cuzw/banner.gif
+        container.innerHTML = container.innerHTML + "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank'><img src='//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_"+cnt.type+".gif' /></a>";
 
         break;
       default: //невидимый счетчик
