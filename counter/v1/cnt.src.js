@@ -15,12 +15,12 @@
 (function(cnt) {
   if(!!cnt) {
     var container = document.getElementById(cnt.container_id);
-    container.innerHTML = "<img src='//goo.gl/"+cnt.id+"' />";
+    container.innerHTML = "<img src='//goo.gl/"+cnt.id+"' width='1' height='1' />";
 
     switch(cnt.type) { 
       case 1:
         https://s3.amazonaws.com/nodtop-store/banners/33Cuzw/banner.gif
-        container.innerHTML = container.innerHTML + "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank' title='Участник рейтинга сайтов НОД'><img src='//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_"+cnt.type+".gif' alt='Рейтинг сайтов НОД' /></a>";
+        container.innerHTML = container.innerHTML + "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank' title='Участник рейтинга сайтов НОД'><img src='//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_"+cnt.type+".gif' alt='Рейтинг сайтов НОД' width='82' height='15' /></a>";
 
         break;
       default: //невидимый счетчик
