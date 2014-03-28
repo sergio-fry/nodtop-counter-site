@@ -20,7 +20,7 @@
     switch(cnt.type) { 
       case 1:
         https://s3.amazonaws.com/nodtop-store/banners/33Cuzw/banner.gif
-        container.innerHTML = container.innerHTML + "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank'><img src='//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_"+cnt.type+".gif' /></a>";
+        container.innerHTML = container.innerHTML + "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank' title='Участник рейтинга сайтов НОД'><img src='//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_"+cnt.type+".gif' alt='Рейтинг сайтов НОД' /></a>";
 
         break;
       default: //невидимый счетчик
