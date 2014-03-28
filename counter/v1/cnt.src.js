@@ -26,6 +26,6 @@
         // нечего не делаем
     }
   } else {
-    alert("НОД: неверно установлен счетчик (код 1)");
+    alert("NOD Top: wrong instalation (code 1)");
   }
 })(window.nodtop_cnt);
