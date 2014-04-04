@@ -3,7 +3,7 @@
  * <span id="nodtop_counter_container"></span>
  * <script>
  *   window.nodtop_cnt = {
- *     id: "J7dHws",
+ *     id: "kJ3a9S",
  *     container_id: "nodtop_counter_container",
  *     type: 0
  *   }
@@ -17,14 +17,27 @@
     var container = document.getElementById(cnt.container_id);
     container.innerHTML = "<img src='//goo.gl/"+cnt.id+"' width='1' height='1' />";
 
-    switch(cnt.type) { 
-      case 1:
-        https://s3.amazonaws.com/nodtop-store/banners/33Cuzw/banner.gif
-        container.innerHTML = container.innerHTML + "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank' title='Участник рейтинга сайтов НОД'><img src='//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_"+cnt.type+".gif' alt='Рейтинг сайтов НОД' width='82' height='15' /></a>";
+    var baner_html = function(url) {
+        return "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank' title='Участник рейтинга сайтов НОД'><img src='"+url+"' alt='Рейтинг сайтов НОД' width='80' height='15' /></a>";
+    }
 
+    switch(cnt.type) { 
+      case 0:
+        //невидимый счетчик
         break;
-      default: //невидимый счетчик
-        // нечего не делаем
+      default: 
+      case 1:
+        container.innerHTML = container.innerHTML + baner_html("//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_1.gif");
+        break;
+      case 2:
+        container.innerHTML = container.innerHTML + baner_html("//s3.amazonaws.com/nodtop-store/banners/"+cnt.id+"/banner_2.gif");
+        break;
+      case 3:
+        container.innerHTML = container.innerHTML + baner_html("//s3.amazonaws.com/nodtop-store/banners/banner_3.gif");
+        break;
+      case 4:
+        container.innerHTML = container.innerHTML + baner_html("//s3.amazonaws.com/nodtop-store/banners/banner_4.gif");
+        break;
     }
   } else {
     alert("NOD Top: wrong instalation (code 1)");
