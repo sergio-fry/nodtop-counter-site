@@ -18,7 +18,7 @@
     container.innerHTML = "<img src='//goo.gl/"+cnt.id+"' width='1' height='1' />";
 
     var baner_html = function(url) {
-        return "<a href='//nodtop.russianpulse.ru#s="+document.domain+"' target='_blank' title='Участник рейтинга сайтов НОД'><img src='"+url+"' alt='Рейтинг сайтов НОД' width='80' height='15' /></a>";
+        return "<a href='//nodtop.russianpulse.ru/#"+document.domain+"' target='_blank' title='Участник рейтинга сайтов НОД'><img src='"+url+"' alt='Рейтинг сайтов НОД' width='80' height='15' /></a>";
     }
 
     switch(cnt.type) { 
